@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+/*Основа*/
+html {
+  height: auto;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: 'Jura', sans-serif;
+}
+
+p{
+    font-family: 'Jura';
+    font-style: normal;
+    
+    }
+    a {
+        color: white;
+        font-family: 'Jura';
+        font-style: normal;
+        text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline; /* Добавляем подчеркивание при наведении */
+    }
+
+h1{
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(180deg, #2D8EE9 0%, #0081FB 95.28%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+
+}
+
+.logo {
+  font-size: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.links {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+
+h2{
+  margin-left: 0;
+  font-size: 36px;
+}
+h3{
+ 
+  font-size: 24px;
+}
+h4{
+  width: auto;
+}
+.auth{
+  position: relative;
+  font-size: 22px;
+  margin-top: 15%;
+  left: 33%;
+  width:600px;border: solid 1px #333333;padding:20px;background-color:#f6f6f6;
+  
+}
+
+.bot {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 200px;
+  height: 1px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+
+  /*Авторизация*/
+  .auth input[type="text"] {
+    background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.91);
+border-radius: 8px;
+margin-right: 10px;
+width: 320px;
+height: 40px;
+font-size: 18px;
+font-family: 'Jura';
+ }
+ .auth input[type="password"] {
+  background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.91);
+border-radius: 8px;
+margin-right: 10px;
+width: 320px;
+height: 40px;
+font-size: 18px;
+font-family: 'Jura';
+}
+
+.auth input[type="submit"]
+{
+    position: relative;
+
+width: 180px;
+height: 40px;
+margin-top:10px;
+background: #2D8EE9;
+border: 1px solid #323232;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+background: #2D8EE9; color: #FFFFFF;font-size:18px;
+
+font-family: 'Jura';
+}
+
+/*Для личного кабинета*/
+
+ .hidden {
+            display: none;
+        }
+      
+        .certificates-table {
+
+            margin:auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        
+            height: auto;
+           
+        }
+
+        .certificates-table th,
+        .certificates-table td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            border: 1px solid #595959;
+        }
+
+        .certificates-table th {
+            background-color: #f5f5f5;
+        }
+
+        .certificates-table th.sortable {
+            cursor: pointer;
+        }
+
+        .certificates-table th.sortable:hover {
+            background-color: #88BFF4;
+        }
+
+        .certificate-details {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .certificate-details.hidden {
+            display: none;
+        }
+
+        .certificate-photo {
+            max-width: 200px;
+            max-height: 200px;
+            margin: 10px auto;
+            display: block;
+        }
+
+        .button-like-link {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #BBBBBB;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          margin-bottom: 5px;
+          width:300px;
+          text-align: center;
+        }
+        
+        .button-like-link:hover {
+          background-color: #e0e0e0;
+        }
+
+        .openBtn{
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #BBBBBB;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          margin-bottom: 5px;
+         
+          text-align: center;
+        }
+
+        .delete-certificate-btn
+        {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #BBBBBB;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          margin-bottom: 5px;
+         
+          text-align: center;
+        }
+        /*Добавление сертификата*/
+        
+        .add {
+          margin-top: 15%;
+          
+      }
+  
+        .add input[type="text"] {
+          background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.91);
+      border-radius: 8px;
+      width: 500px;
+      height: 60px;
+      font-size: 18px;
+      font-family: 'Jura';
+       }
+       .add input[type="submit"]
+      {
+    
+      width: 200px;
+      height: 60px;
+      
+      background: #2D8EE9;
+      border: 1px solid #323232;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      cursor: pointer;
+      
+      font-family: 'Jura';
+      }
+      
+      .image
+
+      {
+        width: 200px;
+        height: 60px;
+        
+        background: #2D8EE9;
+        border: 1px solid #323232;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        cursor: pointer;
+        
+        font-family: 'Jura';
+
+        margin-right: 10px;
+      }
+      .image label{
+        cursor: pointer;
+        font-family: 'Jura';
+        display: inline-block;
+        color: white;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 14px;
+      }
+  
+      
+
+      /*Хуй знает откуда*/
+      .blocka li
+      {
+        font-size: 19px;
+        text-align: left;
+      }
+
+      #search-container {
+        position: relative;
+      
+    }
+
+    #load-more-container
+    {
+      position: relative;
+      text-align: center;
+    }
+    #load-more-container button
+
+    {
+      
+      display: inline-block;
+          padding: 10px 20px;
+          background-color: #BBBBBB;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          margin-bottom: 5px;
+         
+          text-align: center;
+    }

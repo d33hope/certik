@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+/*Основа*/
+html {
+  height: auto;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: 'Jura', sans-serif;
+}
+
+p{
+    font-family: 'Jura';
+    font-style: normal;
+    
+    }
+    a {
+        color: white;
+        font-family: 'Jura';
+        font-style: normal;
+        text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline; /* Добавляем подчеркивание при наведении */
+    }
+h1{
+    position: relative;
+
+   
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(180deg, #2D8EE9 0%, #0081FB 95.28%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.links {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+
+h2{
+
+  font-size: 36px;
+}
+
+.bot {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 200px;
+  height: 1px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+
+}
+
+/*Гланвая страница/страница проверкиа*/
+.cert_container{
+  position: static;
+  margin-top: calc(10vh + 140px);
+  margin-bottom: calc(10vh + 10px);
+  margin-left: 25%;
+}
+
+.check input[type="text"] {
+    background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.91);
+border-radius: 8px;
+margin-right: 10px;
+width: 360px;
+height: 60px;
+font-size: 18px;
+font-family: 'Jura';
+ }
+
+
+#checkBtn{
+    position: relative;
+
+width: 180px;
+height: 60px;
+
+background: #2D8EE9;
+border: 1px solid #323232;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+background: #2D8EE9; color: #FFFFFF;font-size:18px;
+
+font-family: 'Jura';
+}
+
+table.table_result {
+    position: absolute;
+    width: 40%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Jura';
+    font-style: normal;
+    
+    }
+
+    table.table_result,table.table_result td, table.table_result th {
+      border: 1px solid #595959;
+  }
+  table.table_result td,table.table_result th {
+      padding: 3px;
+      width: 30px;
+      height: 30px;
+  }
+  table.table_result th {
+      background: #347c99; 
+      color: #fff; 
+      font-weight: normal;
+  }
+
+
+  
+/*Страница помощи*/
+
+.feedback-form {
+  margin-top: 15%;
+  text-align: left;
+ 
+}
+.feedback-form h2 {
+    font-size: 36px;
+}
+
+.feedback-form p {
+    margin-bottom: 10px;
+}
+
+.feedback-form label {
+    font-size: 18px;
+    font-family: 'Jura', sans-serif;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+ 
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.91);
+  border-radius: 8px;
+ 
+  width: 320px;
+  height: 40px;
+  font-size: 18px;
+  font-family: 'Jura';
+  margin:auto;
+}
+
+.feedback-form textarea {
+    height: 220px;
+}
+
+.feedback-form input[type="submit"] {
+    position: relative;
+    width: 180px;
+    height: 60px;
+    background: #2D8EE9;
+    border: 1px solid #323232;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background: #2D8EE9;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Jura', sans-serif;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background: #0081FB;
+    cursor: pointer;
+}
+
